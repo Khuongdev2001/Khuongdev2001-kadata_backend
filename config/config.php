@@ -18,7 +18,7 @@ return [
     'basePath' => dirname(__DIR__),
     'modules' => [
         'v1' => [
-            'class' => 'app\modules\v1\v1',
+            'class' => 'app\modules\v1\V1',
         ],   
     ],
     // this is where the application will find all controllers
