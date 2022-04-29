@@ -139,7 +139,7 @@ class StaffController extends Controller
      */
     public function actionBuildPdf()
     {
-        $staffs=StaffSearch::find()->where(["status"=>Staff::STATUS_ACTIVE])->all();
+        $staffs = StaffSearch::find()->where(["status" => Staff::STATUS_ACTIVE])->all();
         $html2pdf = new Html2Pdf();
         $html2pdf->writeHTML($this->renderAjax("indexPdf",compact("staffs")));
         return $html2pdf->output('myPdf.pdf');

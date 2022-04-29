@@ -12,6 +12,24 @@ use yii\helpers\ArrayHelper;
 class CustomerEvent extends BaseCustomerEvent
 {
 
+    public function fields()
+    {
+        return array_merge(parent::fields(), [
+            "id" => 'customerId',
+            "name" => "customerName"
+        ]);
+    }
+
+    public function getCustomerName()
+    {
+        return $this->hasOne(Customer::class, ["id" => "customer_id"])->one()->name;
+    }
+
+    public function getCustomerId()
+    {
+        return $this->hasOne(Customer::class, ["id" => "customer_id"])->one()->id;
+    }
+
     public function behaviors()
     {
         return ArrayHelper::merge(

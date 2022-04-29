@@ -43104,3 +43104,2330 @@ $_SERVER = [
     'PASSWORD_TEST' => ''
     'CHARSET_TEST' => 'utf8'
 ]
+2022-04-28 08:45:36 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 [internal function]: yii\log\Logger->flush(true)
+#6 {main}
+2022-04-28 08:45:36 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL' => 'true'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_2528_SKIZASPATEFWALNT'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'NODE_JS1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'USERNAME' => 'khuongdev2001'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'windir' => 'C:\\WINDOWS'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.66.2'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-ac781d6b4f-sock'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'GIT_ASKPASS' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651128336.5888
+    'REQUEST_TIME' => 1651128336
+    'argv' => [
+        0 => 'yii'
+        1 => 'serve'
+    ]
+    'argc' => 2
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 08:49:02 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 [internal function]: yii\log\Logger->flush(true)
+#6 {main}
+2022-04-28 08:49:02 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'NODE_JS1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'USERNAME' => 'khuongdev2001'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'windir' => 'C:\\WINDOWS'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651128542.5594
+    'REQUEST_TIME' => 1651128542
+    'argv' => [
+        0 => 'yii'
+        1 => 'serve'
+    ]
+    'argc' => 2
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 09:40:22 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 [internal function]: yii\log\Logger->flush(true)
+#6 {main}
+2022-04-28 09:40:19 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651131619.8184
+    'REQUEST_TIME' => 1651131619
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/create'
+        2 => 'update_events_table'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:10:19 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "update_events_table". in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('update_events_t...', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('update_events_t...', Array)
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "update_events_table". in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('update_events_t...', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#3 {main}
+2022-04-28 17:10:18 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158618.7317
+    'REQUEST_TIME' => 1651158618
+    'argv' => [
+        0 => 'yii'
+        1 => 'update_events_table'
+    ]
+    'argc' => 2
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:10:19 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\ErrorHandler.php(137): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#7 {main}
+2022-04-28 17:10:18 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158618.7317
+    'REQUEST_TIME' => 1651158618
+    'argv' => [
+        0 => 'yii'
+        1 => 'update_events_table'
+    ]
+    'argc' => 2
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:10:27 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 [internal function]: yii\log\Logger->flush(true)
+#6 {main}
+2022-04-28 17:10:26 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158626.0867
+    'REQUEST_TIME' => 1651158626
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/create'
+        2 => 'update_events_table'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:12:13 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 [internal function]: yii\log\Logger->flush(true)
+#6 {main}
+2022-04-28 17:12:12 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158732.138
+    'REQUEST_TIME' => 1651158732
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:12:29 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(470): yii\log\Logger->flush(true)
+#6 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(403): schmunk42\giiant\commands\BatchController->actionModels()
+#7 [internal function]: schmunk42\giiant\commands\BatchController->actionIndex('models')
+#8 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('batch', Array)
+#13 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('batch', Array)
+#14 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#16 {main}
+2022-04-28 17:12:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158741.2224
+    'REQUEST_TIME' => 1651158741
+    'argv' => [
+        0 => 'yii'
+        1 => 'batch'
+        2 => 'models'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:12:31 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(470): yii\log\Logger->flush(true)
+#6 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(403): schmunk42\giiant\commands\BatchController->actionModels()
+#7 [internal function]: schmunk42\giiant\commands\BatchController->actionIndex('models')
+#8 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('batch', Array)
+#13 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('batch', Array)
+#14 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#16 {main}
+2022-04-28 17:12:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158741.2224
+    'REQUEST_TIME' => 1651158741
+    'argv' => [
+        0 => 'yii'
+        1 => 'batch'
+        2 => 'models'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:12:34 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(470): yii\log\Logger->flush(true)
+#6 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(403): schmunk42\giiant\commands\BatchController->actionModels()
+#7 [internal function]: schmunk42\giiant\commands\BatchController->actionIndex('models')
+#8 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('batch', Array)
+#13 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('batch', Array)
+#14 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#16 {main}
+2022-04-28 17:12:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158741.2224
+    'REQUEST_TIME' => 1651158741
+    'argv' => [
+        0 => 'yii'
+        1 => 'batch'
+        2 => 'models'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:12:35 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(470): yii\log\Logger->flush(true)
+#6 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(403): schmunk42\giiant\commands\BatchController->actionModels()
+#7 [internal function]: schmunk42\giiant\commands\BatchController->actionIndex('models')
+#8 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('batch', Array)
+#13 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('batch', Array)
+#14 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#16 {main}
+2022-04-28 17:12:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158741.2224
+    'REQUEST_TIME' => 1651158741
+    'argv' => [
+        0 => 'yii'
+        1 => 'batch'
+        2 => 'models'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:12:36 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(470): yii\log\Logger->flush(true)
+#6 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(403): schmunk42\giiant\commands\BatchController->actionModels()
+#7 [internal function]: schmunk42\giiant\commands\BatchController->actionIndex('models')
+#8 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('batch', Array)
+#13 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('batch', Array)
+#14 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#16 {main}
+2022-04-28 17:12:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158741.2224
+    'REQUEST_TIME' => 1651158741
+    'argv' => [
+        0 => 'yii'
+        1 => 'batch'
+        2 => 'models'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:12:45 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(470): yii\log\Logger->flush(true)
+#6 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(403): schmunk42\giiant\commands\BatchController->actionModels()
+#7 [internal function]: schmunk42\giiant\commands\BatchController->actionIndex('models')
+#8 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('batch', Array)
+#13 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('batch', Array)
+#14 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#16 {main}
+2022-04-28 17:12:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158741.2224
+    'REQUEST_TIME' => 1651158741
+    'argv' => [
+        0 => 'yii'
+        1 => 'batch'
+        2 => 'models'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:12:53 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(470): yii\log\Logger->flush(true)
+#6 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(403): schmunk42\giiant\commands\BatchController->actionModels()
+#7 [internal function]: schmunk42\giiant\commands\BatchController->actionIndex('models')
+#8 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('batch', Array)
+#13 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('batch', Array)
+#14 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#16 {main}
+2022-04-28 17:12:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158741.2224
+    'REQUEST_TIME' => 1651158741
+    'argv' => [
+        0 => 'yii'
+        1 => 'batch'
+        2 => 'models'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:13:02 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(470): yii\log\Logger->flush(true)
+#6 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(403): schmunk42\giiant\commands\BatchController->actionModels()
+#7 [internal function]: schmunk42\giiant\commands\BatchController->actionIndex('models')
+#8 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('batch', Array)
+#13 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('batch', Array)
+#14 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#16 {main}
+2022-04-28 17:12:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158741.2224
+    'REQUEST_TIME' => 1651158741
+    'argv' => [
+        0 => 'yii'
+        1 => 'batch'
+        2 => 'models'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:13:05 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(470): yii\log\Logger->flush(true)
+#6 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(403): schmunk42\giiant\commands\BatchController->actionModels()
+#7 [internal function]: schmunk42\giiant\commands\BatchController->actionIndex('models')
+#8 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('batch', Array)
+#13 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('batch', Array)
+#14 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#16 {main}
+2022-04-28 17:12:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158741.2224
+    'REQUEST_TIME' => 1651158741
+    'argv' => [
+        0 => 'yii'
+        1 => 'batch'
+        2 => 'models'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:13:06 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(470): yii\log\Logger->flush(true)
+#6 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(403): schmunk42\giiant\commands\BatchController->actionModels()
+#7 [internal function]: schmunk42\giiant\commands\BatchController->actionIndex('models')
+#8 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('batch', Array)
+#13 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('batch', Array)
+#14 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#16 {main}
+2022-04-28 17:12:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158741.2224
+    'REQUEST_TIME' => 1651158741
+    'argv' => [
+        0 => 'yii'
+        1 => 'batch'
+        2 => 'models'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:13:07 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(470): yii\log\Logger->flush(true)
+#6 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(403): schmunk42\giiant\commands\BatchController->actionModels()
+#7 [internal function]: schmunk42\giiant\commands\BatchController->actionIndex('models')
+#8 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('batch', Array)
+#13 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('batch', Array)
+#14 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#16 {main}
+2022-04-28 17:12:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158741.2224
+    'REQUEST_TIME' => 1651158741
+    'argv' => [
+        0 => 'yii'
+        1 => 'batch'
+        2 => 'models'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:13:07 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(470): yii\log\Logger->flush(true)
+#6 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(403): schmunk42\giiant\commands\BatchController->actionModels()
+#7 [internal function]: schmunk42\giiant\commands\BatchController->actionIndex('models')
+#8 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('batch', Array)
+#13 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('batch', Array)
+#14 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#16 {main}
+2022-04-28 17:12:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158741.2224
+    'REQUEST_TIME' => 1651158741
+    'argv' => [
+        0 => 'yii'
+        1 => 'batch'
+        2 => 'models'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:13:08 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(470): yii\log\Logger->flush(true)
+#6 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(403): schmunk42\giiant\commands\BatchController->actionModels()
+#7 [internal function]: schmunk42\giiant\commands\BatchController->actionIndex('models')
+#8 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('batch', Array)
+#13 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('batch', Array)
+#14 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#16 {main}
+2022-04-28 17:12:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158741.2224
+    'REQUEST_TIME' => 1651158741
+    'argv' => [
+        0 => 'yii'
+        1 => 'batch'
+        2 => 'models'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:13:09 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(470): yii\log\Logger->flush(true)
+#6 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(403): schmunk42\giiant\commands\BatchController->actionModels()
+#7 [internal function]: schmunk42\giiant\commands\BatchController->actionIndex('models')
+#8 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('batch', Array)
+#13 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('batch', Array)
+#14 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#16 {main}
+2022-04-28 17:12:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158741.2224
+    'REQUEST_TIME' => 1651158741
+    'argv' => [
+        0 => 'yii'
+        1 => 'batch'
+        2 => 'models'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:13:10 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(470): yii\log\Logger->flush(true)
+#6 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(403): schmunk42\giiant\commands\BatchController->actionModels()
+#7 [internal function]: schmunk42\giiant\commands\BatchController->actionIndex('models')
+#8 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('batch', Array)
+#13 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('batch', Array)
+#14 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#16 {main}
+2022-04-28 17:12:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158741.2224
+    'REQUEST_TIME' => 1651158741
+    'argv' => [
+        0 => 'yii'
+        1 => 'batch'
+        2 => 'models'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:13:11 [-][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\console\Request::getAbsoluteUrl()' 
+
+in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(246): yii\base\Component->__call('getAbsoluteUrl', Array)
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(54): yii\debug\LogTarget->collectSummary()
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2-debug\src\LogTarget.php(180): yii\debug\LogTarget->export()
+#3 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#5 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(470): yii\log\Logger->flush(true)
+#6 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(403): schmunk42\giiant\commands\BatchController->actionModels()
+#7 [internal function]: schmunk42\giiant\commands\BatchController->actionIndex('models')
+#8 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('batch', Array)
+#13 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('batch', Array)
+#14 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#16 {main}
+2022-04-28 17:12:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158741.2224
+    'REQUEST_TIME' => 1651158741
+    'argv' => [
+        0 => 'yii'
+        1 => 'batch'
+        2 => 'models'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]
+2022-04-28 17:13:11 [-][-][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Invalid path alias: @backend/controllers/crud in C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\BaseYii.php:154
+Stack trace:
+#0 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(577): yii\BaseYii::getAlias('@backend/contro...')
+#1 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(487): schmunk42\giiant\commands\BatchController->createDirectoryFromNamespace('backend\\control...')
+#2 C:\xampp\htdocs\project\kadita\backend\vendor\schmunk42\yii2-giiant\src\commands\BatchController.php(404): schmunk42\giiant\commands\BatchController->actionCruds()
+#3 [internal function]: schmunk42\giiant\commands\BatchController->actionIndex('models')
+#4 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('batch', Array)
+#9 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('batch', Array)
+#10 C:\xampp\htdocs\project\kadita\backend\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\project\kadita\backend\yii(20): yii\base\Application->run()
+#12 {main}
+2022-04-28 17:12:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_SESSION_ID' => 'd45a12be-2bb1-4e1e-a751-7e9283507258'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'USERNAME' => 'khuongdev2001'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'PROCESSOR_REVISION' => '3a09'
+    'IDEA_INITIAL_DIRECTORY' => 'D:\\Program Files\\PhpStorm 2021.3.3\\bin'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'PROCESSOR_LEVEL' => '6'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'USERDOMAIN' => 'NODE_JS1'
+    'SystemDrive' => 'C:'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ProgramData' => 'C:\\ProgramData'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\JetBrains\\PhpStorm2021.3\\terminal\\history\\backend-history1'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1651158741.2224
+    'REQUEST_TIME' => 1651158741
+    'argv' => [
+        0 => 'yii'
+        1 => 'batch'
+        2 => 'models'
+    ]
+    'argc' => 3
+    'DNS_TEST' => 'mysql:host=localhost;dbname=kadita'
+    'USERNAME_TEST' => 'root'
+    'PASSWORD_TEST' => ''
+    'CHARSET_TEST' => 'utf8'
+]

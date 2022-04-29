@@ -3,13 +3,10 @@
 namespace app\modules\v1\admin\controllers;
 
 use app\helpers\ResponseBuilder;
-use app\models\query\StaffEvent;
-use app\modules\v1\admin\models\Customer;
-use app\modules\v1\admin\models\form\CustomerEventForm;
-use app\modules\v1\admin\models\Staff;
+use app\modules\v1\admin\models\Event;
+use app\modules\v1\admin\models\search\EventSearch;
 use Yii;
 use app\modules\v1\admin\models\form\EventForm;
-use yii\web\Response;
 
 class EventController extends Controller
 {
@@ -19,83 +16,103 @@ class EventController extends Controller
     public function actionCreate()
     {
         $request = Yii::$app->request;
-        $eventModel = new EventForm();
-        $event = $this->createEvent($eventModel, $request);
-        /* Show Error */
-        if (!isset($event["errors"])) {
-            return $event;
-        }
-
-        $customers = $event->customer;
-        $idsCustomer = [];
-        $idsStaff = array_map(function ($item) {
-            return $item["id"];
-        }, $event->staff);
-        $totalQty = 0;
-        $totalStaff = count($event->staff);
-        foreach ($customers as $customer) {
-            $totalQty += $customer["qty"];
-            $idsCustomer[] = $customer["id"];
-        }
-
-        if ($totalQty > $totalStaff) {
-            return ResponseBuilder::responseJson(false, null, "Số Nhân Viên Không Đủ");
-        }
-        $staffs = Staff::find()->where(["status" => Staff::STATUS_ACTIVE])->andWhere([
-            "in", "id", $idsStaff
-        ])->orderBy(["work_day" => SORT_ASC])->all();
-
-        $customers = Customer::find()->where(["status" => Staff::STATUS_ACTIVE])->andWhere([
-            "in", "id", $idsCustomer
-        ])->all();
-
-        /* Handle Save Customer_Event */
-        foreach ($customers as $customer) {
-            $customerModel = new CustomerEventForm();
-            $customerModel->event_id = $event->id;
-            $customerModel->customer_id = $customer->id;
-            $customerModel->save(false);
-        }
-
-        $qtyRequired = 0;
-        $customerIndex = 0;
-        $template = [];
-        foreach ($staffs as $staff) {
-            $qtyRequired++;
-            if ($qtyRequired > $event->customer[$customerIndex]["qty"]) {
-                $qtyRequired = 0;
-                $customerIndex++;
-                continue;
-            }
-            /* Handle Save Staff_Event*/
-            $staffModel = new StaffEvent();
-            $staffModel->event_id = $event->id;
-            $staffModel->customer_id = $event->customer[$customerIndex]["id"];
-            $staffModel->staff_id = $staff->id;
-            $staffModel->save();
-        }
-        return ResponseBuilder::responseJson(true, null, "Thêm Thành Công Sự Kiện");
+        $eventComponent = $this->module->eventComponent;
+        $check = $eventComponent->create($request->post());
+        if (!$check) {
+            return ResponseBuilder::responseJson($check, [
+                "errors" => $eventComponent->event->getErrors()
+            ]);
+        };
+        $eventComponent->assignCustomer();
+        $eventComponent->assignStaff();
+        return ResponseBuilder::responseJson(true, [
+            "event" => $eventComponent->event,
+            "link_target" => Yii::$app->urlManager->createAbsoluteUrl(
+                ["/v1/admin/staff-event/build-pdf?event_id={$eventComponent->event->id}"]
+            )
+        ], "Thêm Thành Công Sự Kiện");
     }
 
+    public function actionUpdate($id)
+    {
+        $event = EventForm::findOneActive($id);
+        if (!$event) {
+            return ResponseBuilder::responseJson(false, null, null, 404);
+        }
+        $request = Yii::$app->request;
+        $eventComponent = $this->module->eventComponent;
+        $check = $eventComponent->setEvent($event, $request->post());
+        if (!$check) {
+            return ResponseBuilder::responseJson($check, [
+                "errors" => $eventComponent->event->getErrors()
+            ]);
+        };
+        $eventComponent->revorkStaffAll();
+        $eventComponent->revorkCustomerAll();
+        $eventComponent->assignCustomer();
+        $eventComponent->assignStaff();
+
+        return ResponseBuilder::responseJson(true, [
+            "event" => $eventComponent->event,
+            "link_target" => Yii::$app->urlManager->createAbsoluteUrl(
+                ["/v1/admin/staff-event/build-pdf?event_id={$eventComponent->event->id}"]
+            )
+        ], "Cập Nhật Thành Công Sự Kiện");
+    }
 
     /**
      * @throws yii\web\HttpException
      */
-    private function createEvent(EventForm $event, $request): array|EventForm
+    public function actionIndex()
     {
-        $event->load($request->post(), "");
-        $event->code = uniqid();
-        $event->status = 0;
-        if (!$event->date_start_value) {
-            $event->date_start_value = date("YY/mm/dd");
+        $request = Yii::$app->request;
+        $dataProviders = new EventSearch();
+        $events = $dataProviders->search($request->queryParams);
+        return ResponseBuilder::responseJson(true, $events);
+    }
+
+    public function actionView($id): array
+    {
+        $event = EventForm::active()->where(["id" => $id])->one();
+        if (!$event) {
+            return ResponseBuilder::responseJson(false, null, null, 404);
         }
-        if ($event->save()) {
-            return $event;
+        return ResponseBuilder::responseJson(true, compact("event"));
+    }
+
+    public function actionGenerateCode($date): array
+    {
+        $dateFormated = date("Y-m-d", strtotime($date));
+
+        $event = EventForm::find()->where([
+            "<>", "status", EventForm::STATUS_DELETE
+        ])->andWhere([
+            "like", "start_at", $dateFormated
+        ])->one();
+
+        if ($event) {
+            return ResponseBuilder::responseJson(false, "", "Đã Có Sự Kiện $dateFormated");
         }
-        return ResponseBuilder::responseJson(false, [
-            "errors" => $event->getErrors()
+        return ResponseBuilder::responseJson(true, [
+            "code" => "KADITA_SK_" . $dateFormated
         ]);
     }
 
+    /**
+     * @param $id
+     * @param $undo
+     * @return array
+     * @throws yii\web\HttpException
+     */
+    public function actionDelete($id, $undo = false)
+    {
+        $event = EventForm::find()->where(["id" => $id])->one();
+        if (!$event) {
+            return ResponseBuilder::responseJson(false, null, null, 404);
+        }
+        $event->is_deleted = $undo ? null : 1;
+        $event->save(false);
+        return ResponseBuilder::responseJson(true, compact("event"), "Thao tác thành công");
+    }
 
 }

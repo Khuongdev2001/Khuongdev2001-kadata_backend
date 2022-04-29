@@ -2,12 +2,11 @@
 
 namespace app\modules\v1\admin\models\form;
 
-use app\modules\v1\admin\models\CustomerEvent;
+use app\models\StaffEventQuery;
 use yii\behaviors\TimestampBehavior;
 
-class CustomerEventForm extends CustomerEvent
+class StaffEventForm extends StaffEventQuery
 {
-
     public function behaviors(): array
     {
         return [
@@ -19,5 +18,4 @@ class CustomerEventForm extends CustomerEvent
             ],
         ];
     }
-
 }

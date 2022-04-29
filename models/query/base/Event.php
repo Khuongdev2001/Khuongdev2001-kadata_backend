@@ -16,13 +16,17 @@ use Yii;
  * @property integer $create_by
  * @property string $created_at
  * @property string $updated_at
+ * @property string start_at
+ * @property boolean is_deleted
  *
  * @property \app\models\query\CustomerEvent[] $customerEvents
  * @property string $aliasModel
  */
 abstract class Event extends \yii\db\ActiveRecord
 {
-
+    const STATUS_ADVISE = 0;
+    const STATUS_RESULT = 1;
+    const STATUS_DELETE = -99;
 
     /**
      * @inheritdoc
@@ -39,9 +43,9 @@ abstract class Event extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'code'], 'required'],
-            [['status', 'create_by'], 'integer'],
-            [['created_at', 'updated_at'], 'safe'],
-            [['name', 'code'], 'string', 'max' => 255]
+            [['status', 'create_by', 'is_deleted'], 'integer'],
+            [['created_at', 'updated_at', 'start_at'], 'safe'],
+            [['name', 'code'], 'string', 'max' => 255],
         ];
     }
 
@@ -69,6 +73,23 @@ abstract class Event extends \yii\db\ActiveRecord
         return $this->hasMany(\app\models\query\CustomerEvent::className(), ['event_id' => 'id']);
     }
 
+    public function getStaffEvents()
+    {
+        return $this->hasMany(\app\models\query\Staff::className(), ['id' => 'staff_id'])
+            ->where(["status" => 1])
+            ->viaTable("staff_events", ["event_id" => "id"]);
+    }
+
+    public function getCountCustomerAssign()
+    {
+        return $this->hasMany(\app\models\query\CustomerEvent::className(), ["event_id" => "id"])->count();
+    }
+
+
+    public function getCountStaffAssign()
+    {
+        return $this->hasMany(\app\models\query\StaffEvent::className(), ["event_id" => "id"])->count();
+    }
 
     /**
      * @inheritdoc
