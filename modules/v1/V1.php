@@ -17,7 +17,6 @@ class V1 extends Module
 
     public function behaviors(): array
     {
-        $behaviors = parent::behaviors();
         $behaviors['corsFilter'] = [
             'class' => \yii\filters\Cors::className()
         ];
@@ -25,5 +24,5 @@ class V1 extends Module
             'class' => \yii\filters\RateLimiter::class
         ];
         return $behaviors;
-    }   
+    }
 }

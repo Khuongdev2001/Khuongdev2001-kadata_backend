@@ -17,18 +17,6 @@ class UserForm extends User
         ]);
     }
 
-    public function behaviors()
-    {
-        return [
-            [
-                'class' => TimestampBehavior::class,
-                'createdAtAttribute' => 'created_at',
-                'updatedAtAttribute' => 'updated_at',
-                'value' => date("Y-m-d h:i:s"),
-            ],
-        ];
-    }
-
     public function rules()
     {
         return [
@@ -37,14 +25,14 @@ class UserForm extends User
             ['email', 'email'],
             [
                 ['email'], 'unique', 'filter' => [
-                    '=', 'status', 1
-                ]
+                '=', 'status', 1
+            ]
             ],
             [['status'], 'default', 'value' => 0],
             ['password', 'required', 'on' => 'create'],
             ['password', 'string', 'min' => 6],
             [['status'], 'integer'],
-            ['status', 'in',  'range' => [0, 1], 'allowArray' => true],
+            ['status', 'in', 'range' => [0, 1], 'allowArray' => true],
         ];
     }
 }

@@ -39,11 +39,9 @@ class User extends UserIdentity
     public function rules()
     {
         return [
-            ['username', 'filter', 'filter' => 'trim'],
-            ['username', 'required'],
-            ['username', 'string', 'min' => 2, 'max' => 255],
-            ['username', 'unique'],
-            [['consumer', 'access_given'], 'safe'],
+            ['email', 'filter', 'filter' => 'trim'],
+            ['email', 'unique'],
+            [['consumer', 'access_given', 'auth_key'], 'safe'],
             ['email', 'filter', 'filter' => 'trim'],
             ['email', 'required'],
             ['email', 'email'],
@@ -57,10 +55,15 @@ class User extends UserIdentity
      *
      * @return array
      */
-    public function behaviors()
+    public function behaviors(): array
     {
         return [
-            TimestampBehavior::className(),
+            [
+                'class' => TimestampBehavior::class,
+                'createdAtAttribute' => 'created_at',
+                'updatedAtAttribute' => 'updated_at',
+                'value' => date("Y-m-d h:i:s"),
+            ],
         ];
     }
 
@@ -98,23 +101,31 @@ class User extends UserIdentity
     }
 
     /**
+     * @return yii\db\ActiveQuery
+     */
+    public static function active(): Yii\db\ActiveQuery
+    {
+        return static::find()->where(["status" => self::STATUS_ACTIVE]);
+    }
+
+    /**
      * Finds user by email.
      *
      * @param string $email
-     * @return static|null
+     * @return User|null
      */
-    public static function findByEmail($email)
+    public static function findByEmail(string $email): User|null
     {
-        return static::findOne(['email' => $email]);
+        return static::active()->andWhere(["email" => $email])->one();
     }
 
     /**
      * Finds user by password reset token.
      *
      * @param string $token Password reset token.
-     * @return null|static
+     * @return static|null
      */
-    public static function findByPasswordResetToken($token)
+    public static function findByPasswordResetToken(string $token): ?static
     {
         if (!static::isPasswordResetTokenValid($token)) {
             return null;
@@ -132,7 +143,7 @@ class User extends UserIdentity
      * @param string $token Account activation token.
      * @return static|null
      */
-    public static function findByAccountActivationToken($token)
+    public static function findByAccountActivationToken(string $token): static
     {
         return static::findOne([
             'account_activation_token' => $token,

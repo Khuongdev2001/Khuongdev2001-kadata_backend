@@ -1,4 +1,5 @@
 <?php
+
 namespace app\models;
 
 use yii\db\ActiveRecord;
@@ -13,14 +14,14 @@ use Yii;
  * extend from User model.
  *
  * @property integer $id
- * @property string  $username
- * @property string  $password_hash
- * @property string  $password_reset_token
- * @property string  $email
- * @property string  $consumer
- * @property string  $access_given
- * @property string  $account_activation_token
- * @property string  $auth_key
+ * @property string $username
+ * @property string $password_hash
+ * @property string $password_reset_token
+ * @property string $email
+ * @property string $consumer
+ * @property string $access_given
+ * @property string $account_activation_token
+ * @property string $auth_key
  * @property integer $status
  * @property integer $created_at
  * @property integer $updated_at
@@ -28,6 +29,8 @@ use Yii;
 class UserIdentity extends ActiveRecord implements IdentityInterface
 {
     public $consumer;
+    public $token;
+
     /**
      * Declares the name of the database table associated with this AR class.
      *
@@ -45,7 +48,7 @@ class UserIdentity extends ActiveRecord implements IdentityInterface
     /**
      * Finds an identity by the given ID.
      *
-     * @param  int|string $id The user id.
+     * @param int|string $id The user id.
      * @return IdentityInterface|static
      */
     public static function findIdentity($id)
@@ -56,17 +59,17 @@ class UserIdentity extends ActiveRecord implements IdentityInterface
     /**
      * Finds an identity by the given access token.
      *
-     * @param  mixed $token
-     * @param  null  $type
+     * @param mixed $token
+     * @param null $type
      * @return void|IdentityInterface
-     * 
+     *
      * @throws NotSupportedException
      */
     public static function findIdentityByAccessToken($token, $type = null)
     {
         $accessToken = AccessToken::find()->where(['token' => $token])->andWhere(['>', 'expire_at', strtotime('now')])->one();
-        if(!$accessToken) return $accessToken;
-        return User::findOne(['id' => $accessToken->user_id]);
+        if (!$accessToken) return $accessToken;
+        return User::active()->andWhere(['id' => $accessToken->user_id])->one();
         // return User::findOne(['auth_key' => $token, 'status' => User::STATUS_ACTIVE]);
     }
 
@@ -96,8 +99,8 @@ class UserIdentity extends ActiveRecord implements IdentityInterface
 
     /**
      * Validates the given auth key.
-     * 
-     * @param  string  $authKey The given auth key.
+     *
+     * @param string $authKey The given auth key.
      * @return boolean          Whether the given auth key is valid.
      */
     public function validateAuthKey($authKey)
@@ -110,11 +113,12 @@ class UserIdentity extends ActiveRecord implements IdentityInterface
 //------------------------------------------------------------------------------------------------//
 
     /**
-     * Generates "remember me" authentication key. 
+     * Generates "remember me" authentication key.
+     * @throws yii\base\Exception
      */
     public function generateAuthKey()
     {
-        if($this->isNewRecord){
+        if ($this->isNewRecord) {
             $this->auth_key = Yii::$app->security->generateRandomString();
         }
         AccessToken::generateAuthKey($this);
@@ -123,12 +127,10 @@ class UserIdentity extends ActiveRecord implements IdentityInterface
     /**
      * Validates password.
      *
-     * @param  string $password
-     * @return bool
-     * 
-     * @throws \yii\base\InvalidConfigException
+     * @param string $password
+     * @return string
      */
-    public function validatePassword($password)
+    public function validatePassword(string $password): string
     {
         return Yii::$app->security->validatePassword($password, $this->password_hash);
     }
@@ -136,12 +138,12 @@ class UserIdentity extends ActiveRecord implements IdentityInterface
     /**
      * Generates password hash from password and sets it to the model.
      *
-     * @param  string $password
-     * 
+     * @param string $password
+     *
      * @throws \yii\base\Exception
      * @throws \yii\base\InvalidConfigException
      */
-    public function setPassword($password)
+    public function setPassword(string $password)
     {
         $this->password_hash = Yii::$app->security->generatePasswordHash($password);
     }
