@@ -14,6 +14,7 @@ class Controller extends BaseController
     public function verbs()
     {
         return [
+            'login' => ['POST'],
             'index' => ['GET'],
             'update' => ['POST'],
             'view' => ['GET'],
