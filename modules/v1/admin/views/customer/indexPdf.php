@@ -39,7 +39,7 @@ $temp = 0;
         <p style="font-size: 13px">Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam</p>
         <p style="font-size: 14px">Độc Lập -Tự Do - Hạnh Phúc</p>
     </div>
-    <h1 class="title" style="text-align: center">BÁO CÁO VỀ DANH SÁCH ĐỐI TÁC TẠI SPEEDY</h1>
+    <h1 class="title" style="text-align: center">BÁO CÁO VỀ DANH SÁCH ĐỐI TÁC TẠI KADITA Edutech</h1>
     <p style="text-align: right">Hà Nội: <?= date("Y-m-d") ?></p>
     <table>
         <thead>
