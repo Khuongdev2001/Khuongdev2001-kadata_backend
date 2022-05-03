@@ -15,6 +15,7 @@ class EventResult extends BaseEventResult
     const STATUS_INACTIVE = 0;
     const STATUS_ACTIVE = 1;
 
+
     public function behaviors()
     {
         return ArrayHelper::merge(
@@ -33,5 +34,10 @@ class EventResult extends BaseEventResult
                 # custom validation rules
             ]
         );
+    }
+
+    public static function findOneActive($id)
+    {
+        return self::find()->where(["id" => $id])->andWhere(["<>", "status", self::STATUS_ACTIVE])->one();
     }
 }

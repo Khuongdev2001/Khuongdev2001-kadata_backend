@@ -48,18 +48,18 @@ abstract class StaffEvent extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
-    public function attributeLabels()
-    {
-        return [
-            'id' => Yii::t('models', 'ID'),
-            'customer_id' => Yii::t('models', 'Customer ID'),
-            'staff_id' => Yii::t('models', 'Staff ID'),
-            'status' => Yii::t('models', 'Status'),
-            'created_at' => Yii::t('models', 'Created At'),
-            'updated_at' => Yii::t('models', 'Updated At'),
-            'event_id' => Yii::t('models', 'Event ID'),
-        ];
-    }
+//    public function attributeLabels()
+//    {
+//        return [
+//            'id' => Yii::t('models', 'ID'),
+//            'customer_id' => Yii::t('models', 'Customer ID'),
+//            'staff_id' => Yii::t('models', 'Staff ID'),
+//            'status' => Yii::t('models', 'Status'),
+//            'created_at' => Yii::t('models', 'Created At'),
+//            'updated_at' => Yii::t('models', 'Updated At'),
+//            'event_id' => Yii::t('models', 'Event ID'),
+//        ];
+//    }
 
     /**
      * @return \yii\db\ActiveQuery

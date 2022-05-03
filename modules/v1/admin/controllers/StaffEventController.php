@@ -2,13 +2,24 @@
 
 namespace app\modules\v1\admin\controllers;
 
+use Yii;
 use app\helpers\ResponseBuilder;
 use app\modules\v1\admin\models\Event;
+use app\modules\v1\admin\models\search\StaffEventSearch;
 use app\modules\v1\admin\models\StaffEvent;
 use Spipu\Html2Pdf\Html2Pdf;
 
 class StaffEventController extends Controller
 {
+    /**
+     * @throws yii\web\HttpException
+     */
+    public function actionIndex(){
+        $model = new StaffEventSearch();
+        $customerEvents = $model->search(Yii::$app->request->queryParams);
+        return ResponseBuilder::responseJson(true, $customerEvents);
+    }
+
     /**
      * @throws yii\web\HttpException
      * @throws \Spipu\Html2Pdf\Exception\Html2PdfException

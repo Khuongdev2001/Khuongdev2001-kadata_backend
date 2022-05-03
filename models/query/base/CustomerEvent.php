@@ -49,17 +49,17 @@ abstract class CustomerEvent extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
-    public function attributeLabels()
-    {
-        return [
-            'id' => Yii::t('models', 'ID'),
-            'event_id' => Yii::t('models', 'Event ID'),
-            'customer_id' => Yii::t('models', 'Customer ID'),
-            'qty' => Yii::t('models', 'Qty'),
-            'created_at' => Yii::t('models', 'Created At'),
-            'updated_at' => Yii::t('models', 'Updated At'),
-        ];
-    }
+//    public function attributeLabels()
+//    {
+//        return [
+//            'id' => Yii::t('models', 'ID'),
+//            'event_id' => Yii::t('models', 'Event ID'),
+//            'customer_id' => Yii::t('models', 'Customer ID'),
+//            'qty' => Yii::t('models', 'Qty'),
+//            'created_at' => Yii::t('models', 'Created At'),
+//            'updated_at' => Yii::t('models', 'Updated At'),
+//        ];
+//    }
 
     /**
      * @return \yii\db\ActiveQuery

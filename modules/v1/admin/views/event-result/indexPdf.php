@@ -45,7 +45,7 @@ $temp = 0;
         <p style="font-size: 13px">Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam</p>
         <p style="font-size: 14px">Độc Lập -Tự Do - Hạnh Phúc</p>
     </div>
-    <h1 class="title" style="text-align: center">BÁO CÁO VỀ DANH SÁCH NHÂN VIÊN TẠI KADITA Edutech</h1>
+    <h1 class="title" style="text-align: center">BÁO CÁO VỀ LỊCH SẮP XẾP TRẢ KẾT QUẢ SỰ KIỆN: <?= $event->name ?></h1>
     <p style="text-align: right">Hà Nội: <?= date("Y-m-d") ?></p>
     <table>
         <thead>
@@ -54,35 +54,41 @@ $temp = 0;
                 STT
             </th>
             <th style="width: 15%">
-                Mã Nhân Viên
+                Tên K.Hàng
             </th>
             <th style="width: 25%">
-                Tên Nhân Viên
+                SĐT K.Hàng
             </th>
             <th style="width: 25%">
-                Chức Vụ
+                Doanh Thu
             </th>
             <th style="width: 20%">
-                Số Điện Thoại
+                Đối Tác
             </th>
             <th style="width: 20%;overflow-wrap: break-word;word-break: break-all;">
-                Địa Chỉ
+                Người Trả Kết Quả
+            </th>
+            <th style="width: 20%;overflow-wrap: break-word;word-break: break-all;">
+                Trạng Thái
             </th>
         </tr>
         </thead>
         <tbody>
         <?php
-        foreach ($staffs as $staff) {
+        foreach ($eventResults as $eventResult) {
             $temp++;
             ?>
             <tr style="line-height: 1.5">
-                <td style="width: 35px"><?= $temp ?></td>
-                <td style="width: 125px"><?= $staff->staff_code ?></td>
-                <td style="width: 100px"><?= $staff->fullname ?></td>
-                <td style="width: 100px"><?= $staff->staffLevelName ?></td>
-                <td style="width: 102px"><?= $staff->phone ?></td>
-                <td style="width: 150px">
-                    <?= $staff->address ?>
+                <td style="width: 15px"><?= $temp ?></td>
+                <td style="width: 100px"><?= $eventResult->buyer_name ?></td>
+                <td style="width: 100px"><?= $eventResult->buyer_phone ?></td>
+                <td style="width: 100px"><?= $eventResult->turnover ?></td>
+                <td style="width: 102px"><?= $eventResult->customer->name ?></td>
+                <td style="width: 60px">
+                    <?= $eventResult->seller->fullname ?>
+                </td>
+                <td style="width: 40px">
+                    <?= $eventResult->statusText?>
                 </td>
             </tr>
             <?php

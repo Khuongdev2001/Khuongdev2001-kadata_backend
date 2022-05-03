@@ -2,34 +2,33 @@
 
 namespace app\modules\v1\admin\models\search;
 
+use app\modules\v1\admin\models\CustomerEvent;
 use yii\data\ActiveDataProvider;
-use app\modules\v1\admin\models\Event;
 
-class EventSearch extends Event
+class CustomerEventSearch extends CustomerEvent
 {
-    public $search;
-
     public function fields()
     {
         return array_merge(parent::fields(), [
-            "countCustomer" => "countCustomerAssign",
-            "countStaff" => "countStaffAssign",
-            "is_check_result" => function () {
-                return time() > strtotime(date("Y-m-d", strtotime($this->start_at))) + 24 * 3600;
-            }
+            "customer_name" => "customerName"
         ]);
+    }
+
+    public function getCustomerName()
+    {
+        return $this->customer->name;
     }
 
     public function rules()
     {
         return [
-            [["search", "name", "code", "created_at", "updated_at"], "safe"]
+            [["event_id", "customer_id", "qty", "created_at"], "safe"]
         ];
     }
 
-    public function search($params): ActiveDataProvider
+    public function search($params)
     {
-        $query = self::active();
+        $query = self::find();
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
             'pagination' => [
@@ -45,7 +44,9 @@ class EventSearch extends Event
         }
         $query->andFilterWhere([
             'id' => $this->id,
-            'status' => $this->status,
+            'event_id' => $this->event_id,
+            'customer_id' => $this->customer_id,
+            'qty' => $this->qty
         ]);
 
         if ($this->created_at !== null) {
@@ -55,14 +56,6 @@ class EventSearch extends Event
         if ($this->updated_at !== null) {
             $query->andFilterWhere(['between', 'updated_at', $this->updated_at, $this->updated_at + 3600 * 24]);
         }
-
-        $query->andFilterWhere(['or',
-            ['like', 'name', $this->search],
-            ['like', 'code', $this->search],
-            ['like', 'status', $this->search],
-            ['like', 'create_by', $this->search],
-            ['like', 'created_at', $this->search]
-        ]);
         return $dataProvider;
     }
 }

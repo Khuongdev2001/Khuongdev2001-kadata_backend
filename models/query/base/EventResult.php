@@ -31,8 +31,6 @@ use Yii;
 abstract class EventResult extends \yii\db\ActiveRecord
 {
 
-
-
     /**
      * @inheritdoc
      */
@@ -64,20 +62,20 @@ abstract class EventResult extends \yii\db\ActiveRecord
      */
     public function attributeLabels()
     {
-        return [
-            'id' => Yii::t('models', 'ID'),
-            'consultant_id' => Yii::t('models', 'Consultant ID'),
-            'event_id' => Yii::t('models', 'Event ID'),
-            'seller_id' => Yii::t('models', 'Seller ID'),
-            'customer_id' => Yii::t('models', 'Customer ID'),
-            'buyer_name' => Yii::t('models', 'Buyer Name'),
-            'buyer_phone' => Yii::t('models', 'Buyer Phone'),
-            'turnover' => Yii::t('models', 'Turnover'),
-            'status' => Yii::t('models', 'Status'),
-            'paid_at' => Yii::t('models', 'Paid At'),
-            'created_at' => Yii::t('models', 'Created At'),
-            'updated_at' => Yii::t('models', 'Updated At'),
-        ];
+//        return [
+//            'id' => Yii::t('models', 'ID'),
+//            'consultant_id' => Yii::t('models', 'Consultant ID'),
+//            'event_id' => Yii::t('models', 'Event ID'),
+//            'seller_id' => Yii::t('models', 'Seller ID'),
+//            'customer_id' => Yii::t('models', 'Customer ID'),
+//            'buyer_name' => Yii::t('models', 'Buyer Name'),
+//            'buyer_phone' => Yii::t('models', 'Buyer Phone'),
+//            'turnover' => Yii::t('models', 'Turnover'),
+//            'status' => Yii::t('models', 'Status'),
+//            'paid_at' => Yii::t('models', 'Paid At'),
+//            'created_at' => Yii::t('models', 'Created At'),
+//            'updated_at' => Yii::t('models', 'Updated At'),
+//        ];
     }
 
     /**

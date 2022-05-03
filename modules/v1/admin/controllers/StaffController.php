@@ -19,7 +19,6 @@ class StaffController extends Controller
      * @throws yii\base\InvalidConfigException
      * @throws yii\web\HttpException
      * @throws Exception
-     * @author khuongdev2001
      */
     public function actionCreate(): array
     {
@@ -37,11 +36,9 @@ class StaffController extends Controller
     }
 
     /**
+     * @param $id
      * @return array
-     * @throws yii\base\Exception
-     * @throws yii\base\InvalidConfigException
      * @throws yii\web\HttpException
-     * @throws Exception
      * @author khuongdev2001
      */
 
