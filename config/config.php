@@ -21,6 +21,7 @@ return [
             'class' => 'app\modules\v1\V1',
         ],   
     ],
+    'timeZone'=>'Asia/Ho_Chi_Minh',
     // this is where the application will find all controllers
     'controllerNamespace' => 'app\controllers',
     // set an alias to enable autoload of classes from the 'micro' namespace

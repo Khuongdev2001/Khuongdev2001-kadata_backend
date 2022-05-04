@@ -20,7 +20,7 @@ class AdminModule extends Module
         $behaviors['authenticator'] = [
             'class' => \yii\filters\auth\CompositeAuth::class,
             //  \yii\base\ActionFilter isActive()
-            'except' => ['site/login', 'customer/build-pdf', 'staff/build-pdf','event-result/build-pdf'],
+            'except' => ['site/login', 'customer/build-pdf', 'staff/build-pdf','event-result/build-pdf','staff-event/build-pdf'],
             'authMethods' => [
                 \yii\filters\auth\HttpBearerAuth::class
             ],
@@ -49,6 +49,12 @@ class AdminModule extends Module
                 ],
                 [
                     'controllers' => ['v1/admin/event-result'],
+                    'actions' => ['build-pdf'],
+                    'allow' => true,
+                    'roles' => ['?'],
+                ],
+                [
+                    'controllers' => ['v1/admin/staff-event'],
                     'actions' => ['build-pdf'],
                     'allow' => true,
                     'roles' => ['?'],
