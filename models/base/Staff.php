@@ -32,6 +32,7 @@ abstract class Staff extends \yii\db\ActiveRecord
     const STATUS_DELETE = -99;
     const STATUS_INACTIVE = 0;
     const STATUS_ACTIVE = 1;
+
     /**
      * @inheritdoc
      */
@@ -47,7 +48,7 @@ abstract class Staff extends \yii\db\ActiveRecord
     {
         return [
             [['staff_code', 'fullname'], 'required'],
-            [['staff_level', 'status', 'work_day', 'bank_account_number'], 'integer'],
+            [['staff_level', 'status', 'work_day', 'bank_account_number', 'turnover'], 'integer'],
             [['created_at', 'updated_at', 'deleted_at'], 'safe'],
             [['staff_code', 'fullname', 'address', 'bank_account_name'], 'string', 'max' => 255],
             [['phone'], 'string', 'max' => 20],
@@ -91,7 +92,8 @@ abstract class Staff extends \yii\db\ActiveRecord
         return $this->hasMany(\app\models\Wage::className(), ['staff_id' => 'id']);
     }
 
-    protected function getStaffLevelName(){
+    protected function getStaffLevelName()
+    {
         return $this->staffLevel?->name;
     }
 

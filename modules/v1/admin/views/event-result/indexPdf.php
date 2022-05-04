@@ -85,7 +85,7 @@ $temp = 0;
                 <td style="width: 100px"><?= $eventResult->turnover ?></td>
                 <td style="width: 102px"><?= $eventResult->customer->name ?></td>
                 <td style="width: 60px">
-                    <?= $eventResult->seller->fullname ?>
+                    <?= $eventResult->seller?->fullname ?>
                 </td>
                 <td style="width: 40px">
                     <?= $eventResult->statusText?>

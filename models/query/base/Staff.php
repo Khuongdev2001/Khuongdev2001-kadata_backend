@@ -22,8 +22,12 @@ use Yii;
  * @property integer $work_day
  * @property string $bank_account_name
  * @property integer $bank_account_number
+ * @property integer $turnover
  *
+ * @property \app\models\query\EventResult[] $eventResults
+ * @property \app\models\query\EventResult[] $eventResults0
  * @property \app\models\query\StaffLevel $staffLevel
+ * @property \app\models\query\WageStaff[] $wageStaff
  * @property \app\models\query\Wage[] $wages
  * @property string $aliasModel
  */
@@ -47,7 +51,7 @@ abstract class Staff extends \yii\db\ActiveRecord
     {
         return [
             [['staff_code', 'fullname'], 'required'],
-            [['staff_level', 'status', 'work_day', 'bank_account_number'], 'integer'],
+            [['staff_level', 'status', 'work_day', 'bank_account_number', 'turnover'], 'integer'],
             [['created_at', 'updated_at', 'deleted_at'], 'safe'],
             [['staff_code', 'fullname', 'address', 'bank_account_name'], 'string', 'max' => 255],
             [['phone'], 'string', 'max' => 20],
@@ -75,7 +79,24 @@ abstract class Staff extends \yii\db\ActiveRecord
             'work_day' => Yii::t('models', 'Work Day'),
             'bank_account_name' => Yii::t('models', 'Bank Account Name'),
             'bank_account_number' => Yii::t('models', 'Bank Account Number'),
+            'turnover' => Yii::t('models', 'Turnover'),
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getEventResults()
+    {
+        return $this->hasMany(\app\models\query\EventResult::className(), ['consultant_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getEventResults0()
+    {
+        return $this->hasMany(\app\models\query\EventResult::className(), ['seller_id' => 'id']);
     }
 
     /**
@@ -84,6 +105,14 @@ abstract class Staff extends \yii\db\ActiveRecord
     public function getStaffLevel()
     {
         return $this->hasOne(\app\models\query\StaffLevel::className(), ['id' => 'staff_level']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getWageStaff()
+    {
+        return $this->hasMany(\app\models\query\WageStaff::className(), ['staff_id' => 'id']);
     }
 
     /**

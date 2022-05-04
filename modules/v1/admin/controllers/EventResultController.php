@@ -140,7 +140,7 @@ class EventResultController extends Controller
         }
         $event->status = Event::STATUS_RESULT;
         if ($event->save(false)) {
-            return ResponseBuilder::responseJson(true, null, "Đã sắp xếp sự kiện");
+            return ResponseBuilder::responseJson(true, compact("event"), "Đã sắp xếp sự kiện");
         }
         return ResponseBuilder::responseJson(false, null, "Không thể sắp xếp sự kiện");
     }
@@ -164,7 +164,8 @@ class EventResultController extends Controller
         $eventResult->save(false);
         /* Wage*/
         $staff = Staff::findOne($eventResult->seller_id);
-        $staff->work_day += $eventResult->turnover;
+        $staff->work_day += 1;
+        $staff->turnover = $eventResult->turnover;
         $staff->save(false);
         return ResponseBuilder::responseJson(true, [
             "event_result" => $eventResult
@@ -183,9 +184,9 @@ class EventResultController extends Controller
         }
         $eventResults = EventResultSearch::find()->where([
             "event_id" => $event_id
-        ])->all();
+        ])->andWhere(["IS NOT", "seller_id", null])->all();
         $html2pdf = new Html2Pdf();
-        $html2pdf->writeHTML($this->renderAjax("indexPdf",compact("eventResults","event")));
+        $html2pdf->writeHTML($this->renderAjax("indexPdf", compact("eventResults", "event")));
         return $html2pdf->output('myPdf.pdf');
     }
 }
