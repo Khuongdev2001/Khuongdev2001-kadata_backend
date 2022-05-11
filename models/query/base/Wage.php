@@ -26,8 +26,9 @@ use Yii;
  */
 abstract class Wage extends \yii\db\ActiveRecord
 {
-
-
+    const STATUS_PENDING = 0;
+    const STATUS_TRANSFER = 1;
+    const STATUS_CASH = 2;
 
     /**
      * @inheritdoc
@@ -36,6 +37,16 @@ abstract class Wage extends \yii\db\ActiveRecord
     {
         return 'wages';
     }
+
+    public function getStatus($key = null)
+    {
+        $status = [self::STATUS_PENDING, self::STATUS_TRANSFER, self::STATUS_CASH];
+        if ($key) {
+            return $status[$key];
+        }
+        return $status;
+    }
+
 
     /**
      * @inheritdoc
@@ -54,21 +65,21 @@ abstract class Wage extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
-    public function attributeLabels()
-    {
-        return [
-            'id' => Yii::t('models', 'ID'),
-            'customer_id' => Yii::t('models', 'Customer ID'),
-            'staff_id' => Yii::t('models', 'Staff ID'),
-            'basic_pay' => Yii::t('models', 'Basic Pay'),
-            'piece_pay' => Yii::t('models', 'Piece Pay'),
-            'allowance_pay' => Yii::t('models', 'Allowance Pay'),
-            'total_pay' => Yii::t('models', 'Total Pay'),
-            'status' => Yii::t('models', 'Status'),
-            'created_at' => Yii::t('models', 'Created At'),
-            'updated_at' => Yii::t('models', 'Updated At'),
-        ];
-    }
+//    public function attributeLabels()
+//    {
+//        return [
+//            'id' => Yii::t('models', 'ID'),
+//            'customer_id' => Yii::t('models', 'Customer ID'),
+//            'staff_id' => Yii::t('models', 'Staff ID'),
+//            'basic_pay' => Yii::t('models', 'Basic Pay'),
+//            'piece_pay' => Yii::t('models', 'Piece Pay'),
+//            'allowance_pay' => Yii::t('models', 'Allowance Pay'),
+//            'total_pay' => Yii::t('models', 'Total Pay'),
+//            'status' => Yii::t('models', 'Status'),
+//            'created_at' => Yii::t('models', 'Created At'),
+//            'updated_at' => Yii::t('models', 'Updated At'),
+//        ];
+//    }
 
     /**
      * @return \yii\db\ActiveQuery
@@ -87,7 +98,6 @@ abstract class Wage extends \yii\db\ActiveRecord
     }
 
 
-    
     /**
      * @inheritdoc
      * @return \app\models\WageQuery the active query used by this AR class.
@@ -97,5 +107,13 @@ abstract class Wage extends \yii\db\ActiveRecord
         return new \app\models\WageQuery(get_called_class());
     }
 
+    public function getStatusText()
+    {
+        return [
+            self::STATUS_PENDING => "Đã tính lương",
+            self::STATUS_TRANSFER => "Đã chuyển khoản",
+            self::STATUS_CASH => "Đã chuyển tiền mặt"
+        ][$this->status];
+    }
 
 }

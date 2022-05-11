@@ -37,8 +37,8 @@ abstract class Report extends \yii\db\ActiveRecord
     public function statusList($status)
     {
         return [
-            self::STATUS_ACTIVE => "Active",
-            self::STATUS_INACTIVE => "InActive",
+            self::STATUS_ACTIVE => "Đã xử lý",
+            self::STATUS_INACTIVE => "Đã tiếp nhận",
             self::STATUS_DELETE => "Delete"
         ][$status];
     }

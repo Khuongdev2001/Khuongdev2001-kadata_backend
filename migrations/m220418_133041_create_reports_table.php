@@ -16,6 +16,7 @@ class m220418_133041_create_reports_table extends Migration
             'id' => $this->primaryKey(),
             'report_title' => $this->string(255),
             'report_content' => $this->text(),
+            'report_content_raw'=>$this->text(),
             'customer_id' => $this->integer(),
             'status' => $this->integer()->defaultValue(0),
             'created_at' => $this->dateTime(),

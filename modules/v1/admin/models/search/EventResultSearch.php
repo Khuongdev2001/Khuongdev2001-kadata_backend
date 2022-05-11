@@ -14,7 +14,7 @@ class EventResultSearch extends EventResult
         return array_merge(parent::fields(), [
             "customer" => "customer",
             "customer_name" => function () {
-                return $this->customer->name;
+                return $this->customer?->name;
             },
             "seller" => "seller",
             "seller_name" => function () {
@@ -22,7 +22,7 @@ class EventResultSearch extends EventResult
             },
             "consultant" => "consultant",
             "consultant_name" => function () {
-                return $this->consultant->fullname;
+                return $this->consultant?->fullname;
             },
             "statusText" => "statusText"
         ]);

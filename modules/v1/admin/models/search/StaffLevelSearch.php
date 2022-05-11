@@ -22,6 +22,12 @@ class StaffLevelSearch extends StaffLevel
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'pagination' => [
+                'params' => $params
+            ],
+            'sort' => [
+                'params' => $params
+            ]
         ]);
         $this->load($params, "");
         if (!$this->validate()) {

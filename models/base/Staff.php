@@ -97,6 +97,7 @@ abstract class Staff extends \yii\db\ActiveRecord
         return $this->staffLevel?->name;
     }
 
+
     /**
      * @inheritdoc
      * @return \app\models\StaffQuery the active query used by this AR class.

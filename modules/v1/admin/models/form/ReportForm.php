@@ -2,6 +2,7 @@
 
 namespace app\modules\v1\admin\models\form;
 
+use app\modules\v1\admin\models\Customer;
 use app\modules\v1\admin\models\Report;
 use yii\behaviors\TimestampBehavior;
 
@@ -41,13 +42,15 @@ class ReportForm extends Report
     {
         return [
             [["report_content", "report_title", "customer_id"], "required"],
-            [["customer_id"], "exist", 'filter' => [
-                '!=', 'status', 1
+            [["customer_id"], "exist",
+                'targetAttribute' => ['customer_id' => 'id'],
+                "targetClass" => Customer::class, 'filter' => [
+                '=', 'status', 1
             ]],
-            [['created_at', 'updated_at', 'done_at'], 'safe'],
+            [['created_at', 'updated_at', 'done_at','report_content_raw'], 'safe'],
             [['customer_id', 'status'], 'integer'],
             [['status'], 'default', 'value' => 0],
-            ['status', 'in',  'range' => [0, 1], 'allowArray' => true],
+            ['status', 'in', 'range' => [0, 1], 'allowArray' => true],
         ];
     }
 }
